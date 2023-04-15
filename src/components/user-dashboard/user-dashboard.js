@@ -27,6 +27,7 @@ const UserDashboard = () => {
     });
   };
 
+  /* eslint-disable */
   useEffect(() => {
     async function fetchUserDetails() {
       await getUserInfo()
@@ -39,7 +40,7 @@ const UserDashboard = () => {
     } else {
       fetchUserDetails();
     }
-  });
+  }, []);
 
   return (
     <div className="container body-content">

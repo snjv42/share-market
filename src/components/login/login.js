@@ -5,7 +5,7 @@ import sha256 from "crypto-js/sha256";
 import classNames from "classnames";
 import AuthContextProvider from "../../AppContext";
 import { BASE_URL } from "../../constants/constants";
-import './login.css';
+import "./login.css";
 
 function Login() {
   const { userLogin, userLogout } = useContext(AuthContextProvider);
@@ -13,10 +13,10 @@ function Login() {
   const [userId, setUserId] = useState("");
   const [apikey, setApikey] = useState("");
   const [isLoading, setLoading] = useState(false);
-
+  /* eslint-disable */
   useEffect(() => {
     userLogout();
-  });
+  }, []);
 
   const onUserIdChange = (e) => {
     setUserId(e.target.value);
@@ -108,7 +108,9 @@ function Login() {
           </div>
           <div className="d-grid">
             <button
-              className={ classNames('btn btn-primary', { 'button-loader': isLoading } ) }
+              className={classNames("btn btn-primary", {
+                "button-loader": isLoading,
+              })}
               type="submit"
               onClick={handleSubmit}
             >

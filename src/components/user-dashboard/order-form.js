@@ -53,6 +53,7 @@ const OrderForm = () => {
     return fetch(BASE_URL + "/placeOrder/executePlaceOrder", requestOptions)
   };
 
+  /* eslint-disable */
   useEffect(() => {
     fetch("https://v2api.aliceblueonline.com/restpy/contract_master?exch=NSE")
       .then((response) => {
@@ -80,7 +81,7 @@ const OrderForm = () => {
       .finally(() => {
         setNseLoading(false);
       });
-  });
+  },[]);
 
   const handleChange = (evt) => {
     if (evt.target.id === "qty") {
