@@ -1,0 +1,10 @@
+.button-loader {
+    pointer-events: none;
+}
+.btn-primary {
+    min-width: 100px;
+}
+.spinner-border {
+    height: 1rem !important;
+    width: 1rem !important;
+}

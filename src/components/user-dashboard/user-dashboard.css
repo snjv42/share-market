@@ -1,0 +1,47 @@
+.row span {
+    flex: 1;
+}
+.body-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+.portfolio-trigger, .user-profile {
+    flex: 1;
+    max-width: 48%;
+}
+
+.form-select {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+    -moz-padding-start: calc(.75rem - 3px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-image: url(./../../../public/download.svg);
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.loader {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    opacity: 0.5;
+    z-index: 9;
+    display: flex;
+    pointer-events: none;
+}
