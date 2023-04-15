@@ -1,13 +1,10 @@
-import { useContext } from "react";
 import Login from "./components/login/login";
 import UserDashboard from "./components/user-dashboard/user-dashboard";
-import AuthContextProvider from "./AppContext";
 import Header from "./components/navbar/navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 function App() {
-  const { isLoggedIn } = useContext(AuthContextProvider);
   return (
     <div className="App">
       <Header />

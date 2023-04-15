@@ -80,7 +80,7 @@ const OrderForm = () => {
       .finally(() => {
         setNseLoading(false);
       });
-  }, []);
+  });
 
   const handleChange = (evt) => {
     if (evt.target.id === "qty") {

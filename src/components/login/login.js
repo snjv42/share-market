@@ -16,7 +16,7 @@ function Login() {
 
   useEffect(() => {
     userLogout();
-  }, []);
+  });
 
   const onUserIdChange = (e) => {
     setUserId(e.target.value);

@@ -39,7 +39,7 @@ const UserDashboard = () => {
     } else {
       fetchUserDetails();
     }
-  }, []);
+  });
 
   return (
     <div className="container body-content">
